@@ -1,0 +1,132 @@
+<!-- 
+Developers: Emmely Rogers, Audrey Dawson, Mae Wegbreit
+Date: May 1, 2019
+Description: HTML document that contains text and images with the rules of how to play
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkers Rules</title>
+        <style>
+
+            .two-photos{
+                display: flex;
+                justify-content: center;
+            }
+            
+            .column {
+                padding: 5px;
+            }
+
+            figure figcaption {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2 align="center">THE BOARD </h2>
+        <p>
+            The checkerboard has 64 alternating white and dark green squares. 
+            The game is played on the dark green squares. 
+            Each player (red and black) start with 12 regular pieces.
+        </p>
+        <center><img src="starting.png" width="400" height="454"></center>
+        
+        <br><br><br>
+        <h2 align="center">MOVING PIECES </h2>
+        <p>
+            When it is your turn, click on a piece you want to move. 
+            The selected piece and the possible movements you can make with it will be highlighted. 
+            Click on a highlighted cell to complete your move. 
+            You can also select a different piece to complete your move with. 
+        </p>  
+        <center><img src="movesWithNoJump.png" width="221" height="166"></center>
+        
+        <br><br><br>
+        <h2 align="center">THE REGULAR PIECES</h2>
+        <p>
+            A regular piece can only move "forward" (towards the other side of the board than where you started). 
+            It can move or jump (double jumping isn't allowed in our version) in any of the two "forward" diagonal directions as long as the piece stays on the board. 
+            Note: there can be times when a piece has no possible moves.
+        </p>
+        
+        <div class="two-photos">
+            <div class="column">
+                <img src="red_piece.png" width="142" height="142">
+            </div>
+            <div class="column">
+                <img src="black_piece.png" width="142" height="142">
+            </div>
+        </div>
+
+        <br><br><br>
+        <h2 align="center"> JUMPING </h2>
+        <p>
+            Once you jump over a piece, it is removed from the board and placed in jail.
+        </p>
+        
+        <center><img src="jumping.png" width="928" height="310"></center>
+
+        <br><br><br>
+        <h2 align="center"> KINGS </h2>
+        <p>
+            Once you reach the other end of the board with a piece, it turns into a king. 
+            The king has more possible movements. 
+            A king can move or jump in any of the four diagonal directions as long as the piece stays on the board.
+        </p>
+        <div class="two-photos">
+                <div class="column">
+                    <img src="red_king.png" width="142" height="142">
+                </div>
+                <div class="column">
+                    <img src="black_king.png" width="142" height="142">
+                </div>
+            </div>
+        
+        <div class="two-photos">
+            <div class="column">
+                <figure>  
+                    <img src="getAKing.png" width="400" height="454">
+                    <figcaption>Getting a king.</figcaption>
+                </figure>  
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="kingPossibleMoves.png" width="365" height="419">
+                    <figcaption>King movements.</figcaption>
+                </figure> 
+            </div>
+        </div>
+        
+        <br><br><br>
+        <h2 align="center"> HOW TO WIN </h2>
+        <p>
+            You win by capturing all of the other player's pieces, or by putting the other player into a position where they cannot make any moves. 
+            A player can also win if the other player forfeits the game (either during the middle of the game, or when they run out of moves).
+        </p>
+        <div class="two-photos">
+            <div class="column">
+                <figure>  
+                    <img src="allJailed.png" width="442" height="278">
+                    <figcaption>All black pieces in jail.</figcaption>
+                </figure>  
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="forfeit.png" width="442" height="278">
+                    <figcaption>Red forfeits game.</figcaption>
+                </figure> 
+            </div>
+        </div>
+        
+    </body>
+</html>
